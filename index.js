@@ -69,7 +69,6 @@ const imgs = [
   "albert7.jpg",
   "albert8.jpg",
   "albert9.jpg",
-  "albert_retarded.jpg",
   "albert10.jpg",
   "albert11.png",
   "albert12.jpg",
@@ -79,6 +78,7 @@ const imgs = [
   "albert16.png",
   "albert17.jpg",
   "albert18.jpg",
+  "albert19.jpg",
 ];
 
 const quoteBtn = document.getElementById("quote-btn");
