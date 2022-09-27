@@ -1,3 +1,6 @@
+// Thomas
+// Albert Wesker quotes from the game Resident Evil 5
+
 const quotes = [
   "Seven minutes. Seven minutes is all I can spare to play with you.",
   "Isn't this one big family reunion?",
@@ -59,6 +62,8 @@ const quotes = [
   "Let's finish this!",
 ];
 
+// Images of Albert Wesker
+
 const imgs = [
   "albert1.jpg",
   "albert2.jpg",
@@ -81,15 +86,21 @@ const imgs = [
   "albert19.jpg",
 ];
 
-const quoteBtn = document.getElementById("quote-btn");
+const quoteBtn = document.querySelector("#quote-btn");
 const displayQuote = document.getElementById("display-quote");
 
+// This function is hooked up to the quote button on the html document.
+// When you click "Generate random quote" the function runs.
 quoteBtn.addEventListener("click", function () {
+  // The purpose of using the math floor and random here and storing them in a variable
+  // is to get a random quote and image from my 2 arrays.
   let randomQuote = Math.floor(Math.random() * quotes.length);
   let randomImg = Math.floor(Math.random() * imgs.length);
 
   displayImg = imgs[randomImg];
 
+  // I used this to give the source to my images
+  // Since my images are inside an image folder I had to add ./images/
   document.getElementById("display-img").src = `./images/${displayImg}`;
   displayQuote.textContent = quotes[randomQuote];
 });
